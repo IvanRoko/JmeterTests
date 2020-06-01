@@ -762,8 +762,8 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">12</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">35</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -923,10 +923,6 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
               </elementProp>
             </collectionProp>
           </HeaderManager>
-          <hashTree/>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">100</stringProp>
-          </ConstantTimer>
           <hashTree/>
           <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Random Controller" enabled="true">
             <intProp name="InterleaveControl.style">1</intProp>
@@ -1101,7 +1097,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\ROKO000000113\Desktop\report.csv</stringProp>
+          <stringProp name="filename">C:\Users\ROKO000000113\Desktop\CheckinTransientEndpointTest.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
@@ -1142,7 +1138,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="checkins/BackgroundCheckin" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="checkins/BackgroundCheckin" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1370,7 +1366,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -1407,7 +1403,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
           <stringProp name="filename">${LogFilePath}CheckinBackgroundEndpointTest.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -1441,10 +1437,10 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\ROKO000000113\Desktop\report.csv</stringProp>
+          <stringProp name="filename">C:\Users\ROKO000000113\Desktop\CheckinBackgroundEndpointTest.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
