@@ -762,7 +762,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">12</stringProp>
+        <stringProp name="ThreadGroup.num_threads">35</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -923,6 +923,10 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
               </elementProp>
             </collectionProp>
           </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">100</stringProp>
+          </ConstantTimer>
           <hashTree/>
           <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Random Controller" enabled="true">
             <intProp name="InterleaveControl.style">1</intProp>
