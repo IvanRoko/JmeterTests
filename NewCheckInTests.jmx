@@ -1138,6 +1138,10 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+        <stringProp name="ConstantTimer.delay">10000</stringProp>
+      </ConstantTimer>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="checkins/BackgroundCheckin" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
