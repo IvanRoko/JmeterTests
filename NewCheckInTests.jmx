@@ -872,7 +872,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
         </hashTree>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="GET - Loop Transient Checkin" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">120</stringProp>
+          <stringProp name="LoopController.loops">30</stringProp>
         </LoopController>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
