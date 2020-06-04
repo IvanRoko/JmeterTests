@@ -1140,7 +1140,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">2</intProp>
-          <stringProp name="ActionProcessor.duration">10000</stringProp>
+          <stringProp name="ActionProcessor.duration">60000</stringProp>
         </TestAction>
         <hashTree/>
       </hashTree>
