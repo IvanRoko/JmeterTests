@@ -1137,7 +1137,7 @@ props.put(&quot;AgreementsStartDate&quot;, &quot;${__time(yyyy/MM/dd)}&quot;);
           <stringProp name="filename">${LogFilePath}CheckinTransientEndpointTest.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">2</intProp>
           <stringProp name="ActionProcessor.duration">60000</stringProp>
